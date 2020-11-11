@@ -4,11 +4,35 @@
   <meta charset="utf-8">
   <title>Form Building Exercise</title>
 </head>
+<div class="wrapper">
 <body>
-  <form action="https://formspree.io/kevinj902302@gmail.com" method="POST">
+  <!-- <form action="https://formspree.io/kevinj902302@gmail.com" method="POST">
+    <label for="form-message">Your message:</label>
+    <textarea id="form-message" name="message"></textarea>
   <input type="text" name="name">
   <input type="email" name="_replyto">
   <input type="submit" value="Send">
+</form> -->
+
+<form method="post" action="https://formspree.io/kevinj902302@gmail.com" id="form" class="validate">
+  <div class="form-field">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="full-name" id="full-name" placeholder="Joe Bloggs" required />
+  </div>
+  <div class="form-field">
+    <label for="email-input">Email</label>
+    <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" required />
+  </div>
+  <div class="form-field">
+    <label for="message-input">Message</label>
+    <input type="" name="message-input" id="message-input" required />
+  </div>
+  <div class="form-field">
+    <label for=""></label>
+    <input type="submit" value="Sign Up" />
+  </div>
 </form>
+
 </body>
+</div>
 </html>
